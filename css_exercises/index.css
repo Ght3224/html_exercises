@@ -1,0 +1,33 @@
+body {
+  background-color: red;
+  width: 960px;
+  margin: 0 auto;   /*similiar space both sides*/
+}
+
+.column-section {
+  width: 280px;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+}
+
+#reflection {
+  clear: both /*both the left and right dont have content on them*/;
+}
+
+header, #reflection, footer, .column-section{
+padding: 10px;
+margin: 10px;
+}
+
+footer a:hover {
+  color: #060;
+}
+
+@media (max-width: 960px) {
+
+  body { width:100%; }, 
+  header h1 {font-size: 1.2;}, 
+  .column-section {float:none, width: inherit;}
+}
+
